@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+h2{
+    font-size: 45px;
+}
+p{
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    display: block;
+    width: 450px;
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(224, 116, 116);
+}
+input::placeholder{
+    color: white;
+}
+
+button{
+    width: 100px;
+    padding: 7px 1px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+button:hover{
+    opacity: 0.9;
+    color: white;
+}
+
+div{
+    margin-top: 10px;
+}
