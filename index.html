@@ -4,35 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     
-    <h2>MY PAGE</h2>
+    <h2>My Second Web Page</h2>
 
-    <section>
-
-        <p> Fill out the form below</p>
-        <form>
+    <!--Ordered List with Roman numerals-->
+    <h2>G.O.A.Ts</h2>
+        <ol type="I">
+            <li>Ronaldo</li>
+            <li>Messi</li>
+            <li>Pele</li>
+        </ol>
         
-            <input type="text" placeholder="Enter your Full Name" required>
-            <input type="text" placeholder="Enter your User Name" required>
-            <input type="email" placeholder="Enter your email" required>
-            <input type="password" placeholder="Enter your password" required>
+        <!--External Image -->
+        <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=600" 
+            alt="Image of an elephant at sunset" height="320" width="500">
+        <br><br>
+
+        <!--Table section-->
+        <h2>Students registered to PLP Academy</h2>
+        <table border="1" width="600px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ransford</td>
+                    <td>Accra</td>
+                    <td>+233 24 345 3543</td>
+                    <td>ransford@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jerry</td>
+                    <td>Kumasi</td>
+                    <td>+233 24 002 2194</td>
+                    <td>jerry@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Chanise</td>
+                    <td>Tarkoradi</td>
+                    <td>+233 27 323 3413</td>
+                    <td>chanise@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Harriet</td>
+                    <td>Accra</td>
+                    <td>+233 25 465 3043</td>
+                    <td>harriet@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Herbert</td>
+                    <td>Abuja</td>
+                    <td>+234 234 543 4545</td>
+                    <td>herbert@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>PLP Registeration Form</h2>
+
+        <!-- start of form -->
+        <form action="" method="">
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full Name"  required>
+            <br><br>
+
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com">
+            <br><br>
+
+            <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" minlength="8">
+            <br><br>
+
+            <label for="date">Date:</label>
+                <input type="date" id="date" name="date" >
+            <br><br>
             
-            <div>
-                <button type="reset" style="background-color: rgb(167, 40, 40);">Reset</button>
-                <button type="submit" style="background-color: rgb(40, 40, 176);">Submit</button>
-            </div>
+            <!--Drop-down for the list of countries to selct-->
+            <label>Country:</label>
+            <select name="country" id="country">
+                <!--Options from the drop down list-->
+                <option>--Select Country--</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Botswana">Botswana</option>
+                <option value="italy">Italy</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Tanzania">Tanzania</option>
+            </select>
+            <br><br>
 
+            <!--Radio buttons for Genders-->
+            <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="male"> Male
+            <br><br>
+
+            <!--Check boxes for Modules at PLP Acacdemt-->
+            <label for="modules">Modules</label><br>
+                <input type="checkbox" name="modules" value="web-programming"> Web-programming
+                <input type="checkbox" name="modules" value="python"> Python
+                <input type="checkbox" name="modules" value="database-systems"> Database-systems
+                <input type="checkbox" name="modules" value="software-engineering"> Software Engineering
+            <br><br>
+            
+            <!--Submit and Reset buttons-->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
-
-    </section>
-    
-
-    
-
-    
 
     
 </body>
